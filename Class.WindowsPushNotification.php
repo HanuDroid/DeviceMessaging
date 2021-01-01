@@ -17,7 +17,7 @@ class WindowsPushNotification extends PushNotification{
 
 		$configData = getConfig();
 
-		$app_credential_data = $configData->wpn_credentials;
+		$this->app_credential_data = (array) $configData->wpn_credentials;
 	}
 		
 	private function get_access_token(){
